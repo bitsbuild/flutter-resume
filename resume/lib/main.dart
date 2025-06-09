@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:resume/pages/page_about.dart';
+import 'package:resume/pages/page_contacts.dart';
+import 'package:resume/pages/page_home.dart';
 
 void main() {
   runApp(JashUpadhyay());
@@ -26,6 +29,12 @@ class JashUpadhyayScaffold extends StatefulWidget {
 class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: PageView(
+        scrollDirection: Axis.vertical,
+        pageSnapping: true,
+        children: [PageHome(), PageAbout(), PageContact()],
+      ),
+    );
   }
 }
