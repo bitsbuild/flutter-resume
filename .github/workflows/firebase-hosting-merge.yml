@@ -27,4 +27,5 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_FLUTTER_RESUME_JU }}
           channelId: live
+          entryPoint: resume
           projectId: flutter-resume-ju
