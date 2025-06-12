@@ -10,6 +10,6 @@ class PageContact extends StatefulWidget {
 class _PageContactState extends State<PageContact> {
   @override
   Widget build(BuildContext context) {
-    return SizedBox.expand(child: Container(color: Colors.green));
+    return Container(color: Colors.black);
   }
 }

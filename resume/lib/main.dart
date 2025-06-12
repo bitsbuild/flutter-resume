@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:resume/pages/page_about.dart';
 import 'package:resume/pages/page_contacts.dart';
@@ -37,7 +38,13 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
 
   @override
   Widget build(BuildContext context) {
-    late double appBarTextSize = 10;
+    double screenWidth = MediaQuery.of(context).size.width;
+    double appBarTextSize;
+    if (kIsWeb && screenWidth > 800) {
+      appBarTextSize = screenWidth / 40; // or clamp(screenWidth / 30, 16, 28)
+    } else {
+      appBarTextSize = screenWidth / 20;
+    }
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 100,
@@ -51,10 +58,9 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
             },
             child: Text(
               'About',
-              style: GoogleFonts.eduNswActFoundation(
+              style: GoogleFonts.robotoCondensed(
                 textStyle: TextStyle(
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                   letterSpacing: .5,
                   fontSize: appBarTextSize,
                 ),
@@ -68,11 +74,10 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
               });
             },
             child: Text(
-              'Contact Me',
-              style: GoogleFonts.eduNswActFoundation(
+              'Contact',
+              style: GoogleFonts.robotoCondensed(
                 textStyle: TextStyle(
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
                   letterSpacing: .5,
                   fontSize: appBarTextSize,
                 ),
@@ -88,9 +93,9 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
           },
           child: Text(
             'Jash Upadhyay',
-            style: GoogleFonts.eduNswActFoundation(
+            style: GoogleFonts.robotoCondensed(
               textStyle: TextStyle(
-                color: Colors.blue,
+                color: Colors.white,
                 fontWeight: FontWeight.bold,
                 letterSpacing: .5,
                 fontSize: appBarTextSize,
@@ -102,14 +107,14 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
       body: Container(
         decoration: BoxDecoration(color: Colors.black),
         child: Padding(
-          padding: const EdgeInsets.all(30),
+          padding: const EdgeInsets.all(40),
           child: Container(
             decoration: BoxDecoration(
               color: Colors.black,
-              border: Border.all(width: 3, color: Colors.white),
-              borderRadius: BorderRadius.circular(15),
+              border: Border.all(color: Colors.white),
+              borderRadius: BorderRadius.circular(30),
             ),
-            child: wid,
+            child: Padding(padding: const EdgeInsets.all(10.0), child: wid),
           ),
         ),
       ),
