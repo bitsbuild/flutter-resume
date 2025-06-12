@@ -37,6 +37,7 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
 
   @override
   Widget build(BuildContext context) {
+    late double appBarTextSize = 10;
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 100,
@@ -55,6 +56,7 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
                   letterSpacing: .5,
+                  fontSize: appBarTextSize,
                 ),
               ),
             ),
@@ -72,6 +74,7 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
                   color: Colors.blue,
                   fontWeight: FontWeight.bold,
                   letterSpacing: .5,
+                  fontSize: appBarTextSize,
                 ),
               ),
             ),
@@ -90,6 +93,7 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
                 color: Colors.blue,
                 fontWeight: FontWeight.bold,
                 letterSpacing: .5,
+                fontSize: appBarTextSize,
               ),
             ),
           ),
