@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 
 class PageHome extends StatefulWidget {
   const PageHome({super.key});
@@ -10,6 +11,13 @@ class PageHome extends StatefulWidget {
 class _PageHomeState extends State<PageHome> {
   @override
   Widget build(BuildContext context) {
+    late double homeTextSize;
+    var screenWidth = MediaQuery.of(context).size.width;
+    if (kIsWeb && screenWidth > 800) {
+      homeTextSize = 40;
+    } else {
+      homeTextSize = screenWidth / 21;
+    }
     return Container(
       color: Colors.black,
       child: Center(
@@ -18,11 +26,26 @@ class _PageHomeState extends State<PageHome> {
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: [
-            Text('1', style: TextStyle(color: Colors.white)),
-            Text('2', style: TextStyle(color: Colors.white)),
-            Text('3', style: TextStyle(color: Colors.white)),
-            Text('4', style: TextStyle(color: Colors.white)),
-            Text('5', style: TextStyle(color: Colors.white)),
+            Text(
+              '{',
+              style: TextStyle(color: Colors.white, fontSize: homeTextSize),
+            ),
+            Text(
+              '  "name": "Jash Upadhyay",',
+              style: TextStyle(color: Colors.white, fontSize: homeTextSize),
+            ),
+            Text(
+              '  "role": "Backend Developer",',
+              style: TextStyle(color: Colors.white, fontSize: homeTextSize),
+            ),
+            Text(
+              '  "specialization": "Python (DRF)",',
+              style: TextStyle(color: Colors.white, fontSize: homeTextSize),
+            ),
+            Text(
+              '}',
+              style: TextStyle(color: Colors.white, fontSize: homeTextSize),
+            ),
           ],
         ),
       ),
