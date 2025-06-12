@@ -10,6 +10,6 @@ class PageContact extends StatefulWidget {
 class _PageContactState extends State<PageContact> {
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.black);
+    return Container(color: Colors.blue);
   }
 }
