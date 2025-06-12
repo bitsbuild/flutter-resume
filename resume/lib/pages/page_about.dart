@@ -10,6 +10,6 @@ class PageAbout extends StatefulWidget {
 class _PageAboutState extends State<PageAbout> {
   @override
   Widget build(BuildContext context) {
-    return Container(color: Colors.blue);
+    return SizedBox.expand(child: Container(color: Colors.blue));
   }
 }
