@@ -127,11 +127,7 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
         child: Padding(
           padding: const EdgeInsets.all(40),
           child: Container(
-            decoration: BoxDecoration(
-              color: Colors.black,
-              border: Border.all(color: Colors.white),
-              borderRadius: BorderRadius.circular(30),
-            ),
+            decoration: BoxDecoration(color: Colors.black),
             child: Padding(padding: const EdgeInsets.all(12.0), child: wid),
           ),
         ),

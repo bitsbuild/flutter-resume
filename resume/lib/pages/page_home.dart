@@ -30,18 +30,64 @@ class _PageHomeState extends State<PageHome> {
               '{',
               style: TextStyle(color: Colors.white, fontSize: homeTextSize),
             ),
-            Text(
-              '  "name": "Jash Upadhyay",',
-              style: TextStyle(color: Colors.white, fontSize: homeTextSize),
+
+            Row(
+              children: [
+                Text(
+                  '  "Name": ',
+                  style: TextStyle(
+                    color: Colors.lightBlueAccent,
+                    fontSize: homeTextSize,
+                  ),
+                ),
+                Text(
+                  '"Jash Upadhyay",',
+                  style: TextStyle(
+                    color: Colors.orangeAccent,
+                    fontSize: homeTextSize,
+                  ),
+                ),
+              ],
             ),
-            Text(
-              '  "role": "Backend Developer",',
-              style: TextStyle(color: Colors.white, fontSize: homeTextSize),
+
+            Row(
+              children: [
+                Text(
+                  '  "Role": ',
+                  style: TextStyle(
+                    color: Colors.lightBlueAccent,
+                    fontSize: homeTextSize,
+                  ),
+                ),
+                Text(
+                  '"Backend Developer",',
+                  style: TextStyle(
+                    color: Colors.orangeAccent,
+                    fontSize: homeTextSize,
+                  ),
+                ),
+              ],
             ),
-            Text(
-              '  "specialization": "Python (DRF)",',
-              style: TextStyle(color: Colors.white, fontSize: homeTextSize),
+
+            Row(
+              children: [
+                Text(
+                  '  "Specialization": ',
+                  style: TextStyle(
+                    color: Colors.lightBlueAccent,
+                    fontSize: homeTextSize,
+                  ),
+                ),
+                Text(
+                  '"Python (DRF)",',
+                  style: TextStyle(
+                    color: Colors.orangeAccent,
+                    fontSize: homeTextSize,
+                  ),
+                ),
+              ],
             ),
+
             Text(
               '}',
               style: TextStyle(color: Colors.white, fontSize: homeTextSize),
