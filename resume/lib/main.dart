@@ -4,7 +4,6 @@ import 'package:resume/pages/page_about.dart';
 import 'package:resume/pages/page_contacts.dart';
 import 'package:resume/pages/page_home.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:resume/pages/page_stack.dart';
 
 void main() {
   runApp(JashUpadhyay());
@@ -59,23 +58,6 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
             },
             child: Text(
               'About',
-              style: GoogleFonts.robotoCondensed(
-                textStyle: TextStyle(
-                  color: Colors.white,
-                  letterSpacing: .5,
-                  fontSize: appBarTextSize,
-                ),
-              ),
-            ),
-          ),
-          TextButton(
-            onPressed: () {
-              setState(() {
-                wid = PageStack();
-              });
-            },
-            child: Text(
-              'Stack',
               style: GoogleFonts.robotoCondensed(
                 textStyle: TextStyle(
                   color: Colors.white,
