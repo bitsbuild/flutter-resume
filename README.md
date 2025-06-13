@@ -1,6 +1,6 @@
 # 🧑‍💻 Flutter Resume
 
-A simple, responsive personal resume website built using Flutter and deployed via Firebase Hosting.
+A Simple, Responsive Personal Resume Cross Platform Built Using Flutter And Deployed Via Firebase Hosting.
 
 ---
 
