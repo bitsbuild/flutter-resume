@@ -8,5 +8,5 @@ A simple, responsive personal resume website built using Flutter and deployed vi
 
 You can view the hosted resume site at:
 
-- 🌐 [build-jashupadhyay.web.app](https://build-jashupadhyay.web.app/)
-- 🌐 [build-jashupadhyay.firebaseapp.com](https://build-jashupadhyay.firebaseapp.com/)
+- 🌐 [jashupadhyaybuilds.web.app](https://jashupadhyaybuilds.web.app/)
+- 🌐 [jashupadhyaybuilds.firebaseapp.com](https://jashupadhyaybuilds.firebaseapp.com/)
