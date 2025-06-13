@@ -74,7 +74,7 @@ class _JashUpadhyayScaffoldState extends State<JashUpadhyayScaffold> {
               });
             },
             child: Text(
-              'Contact',
+              'Socials',
               style: GoogleFonts.robotoCondensed(
                 textStyle: TextStyle(
                   color: Colors.white,
